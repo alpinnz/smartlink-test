@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "909508563061",
+    "project_id": "smartlink-test-2f28e",
+    "storage_bucket": "smartlink-test-2f28e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909508563061:android:fce0c7e2c37a7941e9283c",
+        "android_client_info": {
+          "package_name": "com.alpinnz.smartlink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909508563061-uri483s0s1n8fmnrs0dc496s4drdpeak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alpinnz.smartlink",
+            "certificate_hash": "5be1ca622c2867cc764c5a9ad7eae4d1d987ea17"
+          }
+        },
+        {
+          "client_id": "909508563061-liorugcrepafosv3nfjoq39v1qtbq4rr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf0yri0_zVVwCKkTDLmpa21sMn8I1k_9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909508563061-liorugcrepafosv3nfjoq39v1qtbq4rr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
