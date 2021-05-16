@@ -1,35 +1,38 @@
-class ServiceModel {
+import 'package:smartlink/util/safe.utils.dart';
+
+class Layanan {
   String idlayanan;
   String namaLayanan;
   int jumlah;
-  int durasiPenyelesaian;
+  double durasiPenyelesaian;
   int idsatuan;
-  int harga;
-  int hapus;
+  double harga;
+  bool hapus;
   String namaSatuan;
   String createdAt;
   String updatedAt;
 
-  ServiceModel(
-      {this.idlayanan,
-      this.namaLayanan,
-      this.jumlah,
-      this.durasiPenyelesaian,
-      this.idsatuan,
-      this.harga,
-      this.hapus,
-      this.namaSatuan,
-      this.createdAt,
-      this.updatedAt});
+  Layanan({
+    this.idlayanan,
+    this.namaLayanan,
+    this.jumlah,
+    this.durasiPenyelesaian,
+    this.idsatuan,
+    this.harga,
+    this.hapus,
+    this.namaSatuan,
+    this.createdAt,
+    this.updatedAt,
+  });
 
-  ServiceModel.fromJson(Map<String, dynamic> json) {
+  Layanan.fromJson(Map<String, dynamic> json) {
     idlayanan = json['idlayanan'];
     namaLayanan = json['nama_layanan'];
     jumlah = json['jumlah'];
-    durasiPenyelesaian = json['durasi_penyelesaian'];
+    durasiPenyelesaian = SafeUtils.parseDouble(json, 'durasi_penyelesaian');
     idsatuan = json['idsatuan'];
-    harga = json['harga'];
-    hapus = json['hapus'];
+    harga = SafeUtils.parseDouble(json, 'harga');
+    hapus = SafeUtils.parseBool(json, 'harga');
     namaSatuan = json['nama_satuan'];
     createdAt = json['created_at'];
     updatedAt = json['updated_at'];
